@@ -1,0 +1,16 @@
+name: Self Hosted Runner
+on:
+  workflow_dispatch:
+
+jobs:
+  local:
+    runs-on: self-hosted
+    steps:
+      - name: Identify runner
+        run: echo "My self-hosted runner is working"
+
+      - name: Show computer information
+        shell: powershell
+        run: |
+          hostname
+          echo "Runner OS: $env:RUNNER_OS"
