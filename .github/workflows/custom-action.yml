@@ -1,0 +1,13 @@
+name: My Custom Action
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Afaqahmed138/hello-action@v1.0.0
+        with:
+          who-to-greet: Afaq Ahmed
