@@ -15,4 +15,4 @@ jobs:
       - name: Show triggering event
         env:
           EVENT_NAME: ${{ github.event_name }}
-        run: echo "Event: $EVENT_NAME"
+        run: echo "Event is $EVENT_NAME"
